@@ -1,0 +1,22 @@
+.category-container {
+  &__aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .category-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &__main {
+      grid-column-start: 1;
+      grid-column-end: 9;
+    }
+    &__aside {
+      display: block;
+      grid-column-start: 10;
+      grid-column-end: 13;
+    }
+  }
+}

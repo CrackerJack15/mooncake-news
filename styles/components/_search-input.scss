@@ -1,0 +1,15 @@
+.search-input {
+  padding: 0.5rem 1rem;
+
+  width: 100%;
+  border: solid 1px black;
+  border-radius: 1rem;
+  outline: none;
+
+  &__button {
+    position: absolute;
+    background-color: white;
+    top: 0.25rem;
+    right: 1rem;
+  }
+}

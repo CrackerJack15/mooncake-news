@@ -1,0 +1,12 @@
+.search {
+  &__container {
+    margin: 2rem 0;
+  }
+
+  &__input {
+    @include box(100%, 2.5rem);
+
+    padding: 0 0.5rem;
+    outline: none;
+  }
+}

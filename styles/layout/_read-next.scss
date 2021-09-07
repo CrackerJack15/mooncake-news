@@ -1,0 +1,54 @@
+.read-next {
+  @include flex(space-between, center);
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+
+  &:hover &__title-container {
+    text-decoration: underline;
+  }
+
+  &__sign {
+    @include flex-center;
+    position: relative;
+    width: 30%;
+    padding: 0.2em 0;
+
+    color: white;
+    background-color: $secondary;
+
+    &::before {
+      @include box(0.75rem, 50%);
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -0.75rem;
+
+      background: linear-gradient(
+        to right top,
+        $secondary 0,
+        $secondary calc(50% - 1px),
+        transparent 50%
+      );
+    }
+    &::after {
+      @include box(0.75rem, 50%);
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: -0.75rem;
+
+      background: linear-gradient(
+        to right bottom,
+        $secondary 0,
+        $secondary calc(50% - 1px),
+        transparent 50%
+      );
+    }
+  }
+
+  &__title-container {
+    width: 65%;
+  }
+}

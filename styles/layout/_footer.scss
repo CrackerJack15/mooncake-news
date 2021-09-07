@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+
+  background-color: $primary;
+  color: white;
+
+  &__title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .footer {
+    padding-top: 2rem;
+    &__about {
+      width: 50%;
+    }
+    &__created-by {
+      width: 50%;
+    }
+    &__container {
+      flex-direction: row;
+    }
+  }
+}

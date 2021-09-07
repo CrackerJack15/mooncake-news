@@ -1,0 +1,26 @@
+.profile {
+  &__intro {
+    margin: 2rem 0;
+  }
+
+  &__author {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__bio {
+    color: #5c5c5c;
+  }
+
+  &__items-container {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profile {
+    &__intro {
+      margin-top: 0;
+    }
+  }
+}

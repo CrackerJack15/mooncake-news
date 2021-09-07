@@ -1,0 +1,21 @@
+.hero {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    margin-top: 0;
+  }
+  .category-hero-container {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .category-hero-container {
+    margin-top: 0;
+  }
+}

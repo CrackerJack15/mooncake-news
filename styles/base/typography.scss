@@ -1,0 +1,55 @@
+.logo {
+  &__sign {
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 0.025em 0.025em 0 $secondary, 0.05em 0.05em 0 $secondary,
+      0.075em 0.075em 0 $secondary, 0.1em 0.1em #231942;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .logo {
+    &__sign {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    &__sign {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    &__sign {
+      font-size: 32px;
+    }
+  }
+}
+
+.heading-2 {
+  font-size: 18px;
+
+  &--normal {
+    @extend .heading-2;
+    font-weight: normal;
+  }
+}
+
+.heading-3 {
+  font-size: 16px;
+}
+
+.caption {
+  font-size: 14px;
+
+  &--grey {
+    @extend .caption;
+    color: #5c5c5c;
+  }
+}

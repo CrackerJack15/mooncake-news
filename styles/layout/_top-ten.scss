@@ -1,0 +1,27 @@
+.top-ten {
+  @include flex(space-between, center);
+
+  &:hover h2 {
+    text-decoration: underline;
+  }
+
+  &__container {
+    margin-top: 1rem;
+  }
+}
+
+.top-ten-item {
+  &__number {
+    @include flex-center-horiz;
+
+    width: 20%;
+
+    font-size: 64px;
+
+    color: $secondary;
+  }
+
+  &__title-container {
+    width: 75%;
+  }
+}

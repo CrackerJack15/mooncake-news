@@ -1,0 +1,13 @@
+.load-more-btn {
+  margin-top: 2rem;
+  padding: 0.4em 1em;
+  font-size: 20px;
+
+  color: white;
+  background-color: $primary;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: rgba($color: $primary, $alpha: 0.75);
+  }
+}

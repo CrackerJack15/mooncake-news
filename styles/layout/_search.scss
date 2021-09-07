@@ -1,0 +1,13 @@
+.search {
+  @include flex-center;
+  @include box(100%, 4rem);
+  position: absolute;
+  left: 0;
+
+  background-color: $secondary;
+}
+
+.search-input__container {
+  position: relative;
+  width: 100%;
+}

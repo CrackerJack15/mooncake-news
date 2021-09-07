@@ -1,0 +1,32 @@
+.read-more-link {
+  @include flex-center-vert;
+  padding: 0.3em 0.4em;
+  width: 60%;
+
+  font-weight: bold;
+
+  border: solid 1px black;
+  border-radius: 0.25rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &__arrow {
+    margin-left: 0.5rem;
+  }
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+
+.menu-link {
+  margin-bottom: 0.5rem;
+
+  color: white;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

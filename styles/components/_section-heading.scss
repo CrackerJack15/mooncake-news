@@ -1,0 +1,36 @@
+.section-heading {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  padding: 0.25em 0.75em;
+
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+
+  background-color: #fff;
+  color: $secondary;
+  border: solid 3px black;
+  box-shadow: 1px 1px 0 0 black, 2px 2px 0 0 black, 3px 3px 0 0 black,
+    4px 4px 0 0 black;
+
+  &__wrapper {
+    position: relative;
+    margin: 2rem 0;
+
+    text-align: center;
+
+    &::before {
+      @include box(100%, 4px);
+
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+
+      background-color: black;
+    }
+  }
+}

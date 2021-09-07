@@ -1,0 +1,28 @@
+.menu {
+  @include box(100%, 100vh);
+
+  background-color: $primary;
+}
+
+.dropdown-container {
+  border-bottom: 1px solid white;
+}
+
+.dropdown-btn {
+  @include flex(space-between, center);
+  width: 100%;
+  padding: 1rem 0;
+
+  color: white;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.reverse-arrow {
+  transform: rotate(180deg);
+}
