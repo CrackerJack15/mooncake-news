@@ -38,15 +38,16 @@ export async function getServerSideProps() {
     `${searchURL}?section=politics&show-fields=thumbnail,trailText&show-tags=contributor&page-size=6&api-key=${process.env.API_KEY}`
   );
 
-  const dayNow = dayjs(Date.now()).format("YYYY-DD-MM");
+  const dayNow = dayjs(Date.now()).format("YYYY-MM-DD");
   const monthBefore = dayjs(Date.now())
     .subtract(1, "month")
-    .format("YYYY-DD-MM");
+    .format("YYYY-MM-DD");
 
   const popularLastMonthData = await fetchInfo(
     `${searchURL}?from-date=${monthBefore}&to-date=${dayNow}&order-by=relevance&page-size=10&api-key=${process.env.API_KEY}`
   );
-  const popularLastMonth = popularLastMonthData.response.results;
+ 
+  const popularLastMonth = popularLastMonthData.response?.results;
 
   const books = await fetchSectionInfo(
     `${searchURL}?section=books&show-fields=thumbnail&page-size=3&api-key=${process.env.API_KEY}`
